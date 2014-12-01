@@ -15,6 +15,10 @@ def aboutUs():
 def services():
 	return render_template('services.html')
 
+@app.route('/details')
+def details():
+	return render_template('portfolio-item.html')
+
 @app.route('/contact')
 def contact():
 	return render_template('contact.html')
