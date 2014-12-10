@@ -19,9 +19,25 @@ def services():
 def details():
 	return render_template('portfolio-item.html')
 
+@app.route('/generalChart')
+def genCharts():
+	return render_template('chartGeneral.html')
+
+@app.route('/heatmaps')
+def heatMaps():
+	return render_template('heatmaps.html')
+
+@app.route('/highChart')
+def highCharts():
+	return render_template('highChart.html')
+
 @app.route('/charts')
 def charts():
 	return render_template('charts.html')
+
+@app.route('/kmeans')
+def kmeans():
+	return render_template('kmeansOutput.html')
 
 @app.route('/contact')
 def contact():
