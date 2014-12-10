@@ -19,6 +19,10 @@ def services():
 def details():
 	return render_template('portfolio-item.html')
 
+@app.route('/charts')
+def charts():
+	return render_template('charts.html')
+
 @app.route('/contact')
 def contact():
 	return render_template('contact.html')
