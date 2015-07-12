@@ -22,7 +22,7 @@
     <link href="{{ url_for('static', filename='css/modern-business.css') }} " rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{ url_for('static', filename='font-awesome-4.1.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='fonts/font-awesome-4.1.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -131,14 +131,14 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://www.fieldsync.net/files/2113/6460/9808/banner_agriculture.png');"></div>
+                <div class="fill" style="background-image:url('{{ url_for('static', filename='img/banner_agriculture.png') }}');"></div>
                 <div class="carousel-caption">
                     <h2>Depict Climate Change</h2>
                     <p>Visualize the change in rainfall and temperature across 169 districts across India over the last two decades.</p>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://www.downloadjpeg.com/wp-content/uploads/2014/10/organic_agriculture.jpg');"></div>
+                <div class="fill" style="background-image:url('{{ url_for('static', filename='img/organic_agriculture.jpg') }}');"></div>
                 <div class="carousel-caption">
                     <h2>Increase Productivity</h2>
                     <p>Help farmers know the contents of their soil and hence make accurate measures to minimize fertilizer usage, increase produce and profit margins.</p>
