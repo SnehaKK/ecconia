@@ -128,6 +128,7 @@
             <div class="col-md-8">
                 <h3>Send us a Message</h3>
                 <form name="sentMessage" id="contactForm" action="http://formspree.io/kulsneha04@gmail.com" method="POST" novalidate>
+                    <input type="hidden" name="_next" value="https://ecconia.herokuapp.com" />
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Full Name:</label>
@@ -150,7 +151,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Message:</label>
-                            <textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                            <textarea rows="10" cols="100" class="form-control" name="messages" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
