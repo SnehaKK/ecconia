@@ -15,9 +15,13 @@ def aboutUs():
 def services():
 	return render_template('services.html')
 
+@app.route('/portfolio')
+def portfolio():
+	return render_template('portfolio-item.html')
+
 @app.route('/details')
 def details():
-	return render_template('portfolio-item.html')
+	return render_template('portfolio-item-ecc.html')
 
 @app.route('/generalChart')
 def genCharts():
@@ -43,6 +47,9 @@ def kmeans():
 def contact():
 	return render_template('contact.html')
 
+@app.errorhandler(404)
+def page_not_found(e):
+	return render_template('404.html'), 404
 
 if __name__ == '__main__':
 	app.run(host="0.0.0.0",port=5000,debug=True)
