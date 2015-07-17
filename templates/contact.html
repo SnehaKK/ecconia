@@ -127,7 +127,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h3>Send us a Message</h3>
-                <form name="sentMessage" id="contactForm" action="http://formspree.io/kulsneha04@gmail.com" novalidate>
+                <form name="sentMessage" id="contactForm" action="http://formspree.io/kulsneha04@gmail.com" method="POST" novalidate>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Full Name:</label>
@@ -190,7 +190,7 @@
     <!-- Contact Form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <script src="{{ url_for('static', filename='js/jqBootstrapValidation.js') }} "></script>
-    <script src="{{ url_for('static', filename='js/contact_me.js') }} "></script>
+    <!-- <script src="{{ url_for('static', filename='js/contact_me.js') }} "></script> -->
 
 </body>
 
